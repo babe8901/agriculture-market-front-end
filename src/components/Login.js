@@ -82,6 +82,22 @@ export default function Login() {
                                 Sign in
                             </button>
                         </div>
+
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <label htmlFor="remember-me" className="ml-2 block text-sm text-white">
+                                    Not Registered?
+                                </label>
+                            </div>
+
+                            <div className="text-sm">
+                                <Link to="/register">
+                                    <a href="/register" className="font-medium text-indigo-600 hover:text-indigo-500">
+                                        Register
+                                    </a>
+                                </Link>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
