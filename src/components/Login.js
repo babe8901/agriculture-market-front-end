@@ -1,19 +1,14 @@
 import React from 'react'
 import { LockClosedIcon } from '@heroicons/react/solid'
 import Footer from './Footer'
+import Header from './Header'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
     return (
         <>
-            {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-50">
-        <body class="h-full">
-        ```
-      */}
-            <div className="min-h-full bg-black flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+            <Header />
+            <div className="min-h-full bg-black flex items-center justify-center pt-8 pb-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-md w-full space-y-8">
                     <div>
                         <img
@@ -23,15 +18,15 @@ export default function Login() {
                         />
                         <h2 className="mt-6 text-center text-3xl font-extrabold text-white">Sign in to your account</h2>
                     </div>
-                    <form className="mt-8 space-y-6" action="#" method="POST">
+                    <form className="mt-8 space-y-6" action="http://localhost:5000/api/auth/login" method="POST">
                         <input type="hidden" name="remember" defaultValue="true" />
                         <div className="rounded-md shadow-sm -space-y-px">
-                            <div>
+                            <div className='py-2'>
                                 <label htmlFor="email-address" className="sr-only">
                                     Email address
                                 </label>
                                 <input
-                                    id="email-address"
+                                    id="email"
                                     name="email"
                                     type="email"
                                     autoComplete="email"
@@ -40,7 +35,7 @@ export default function Login() {
                                     placeholder="Email address"
                                 />
                             </div>
-                            <div>
+                            <div className='py-2'>
                                 <label htmlFor="password" className="sr-only">
                                     Password
                                 </label>
