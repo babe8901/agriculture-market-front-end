@@ -7,7 +7,7 @@ const products = [
     {
         id: 1,
         name: 'Wheat',
-        href: '/market-place/crop-preview',
+        href: '/market-place/crop-modal',
         imageSrc: process.env.PUBLIC_URL + '/crops/wheat.jpg',
         imageAlt: "Wheat",
         price: '₹15/kg',
@@ -47,7 +47,7 @@ export default function MarketPlace() {
             {/* <p>{this.state.crops}</p> */}
             <div className="bg-white">
                 <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                    <div className="py-10">
+                    <div className="pb-5">
                         <h2 className="text-5xl text-indigo-600 font-bold tracking-wide uppercase lg:text-center">Market Place</h2>
                     </div>
                     <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -63,7 +63,7 @@ export default function MarketPlace() {
                                 <div className="mt-4 flex justify-between">
                                     <div>
                                         <h3 className="text-sm text-gray-700">
-                                            <Link to="/market-place/crop-preview">
+                                            <Link to="/market-place/crop-modal">
                                                 <a href={product.href}>
                                                     <span aria-hidden="true" className="absolute inset-0" />
                                                     {product.name}

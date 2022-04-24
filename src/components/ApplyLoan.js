@@ -14,7 +14,7 @@ export default function ApplyLoan() {
                         </div>
                     </div>
                     <div className="mt-5 md:mt-0 md:col-span-2">
-                        <form action="http://localhost:5000/api/auth/apply-loan" method="POST">
+                        <form action="http://localhost:5000/api/auth/personal-info" method="POST">
                             <div className="shadow overflow-hidden sm:rounded-md">
                                 <div className="px-4 py-5 bg-white sm:p-6">
                                     <div className="grid grid-cols-6 gap-6">
@@ -338,7 +338,7 @@ export default function ApplyLoan() {
                         </div>
                     </div>
                     <div className="mt-5 md:mt-0 md:col-span-2">
-                        <form action="http://localhost:5000/api/auth/apply-loan" method="POST">
+                        <form action="http://localhost:5000/api/auth/notification-preference" method="POST">
                             <div className="shadow overflow-hidden sm:rounded-md">
                                 <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
                                     <fieldset>

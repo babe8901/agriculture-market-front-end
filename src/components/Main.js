@@ -14,6 +14,11 @@ import Company from './Company'
 import Features from './Features'
 import Product from './Product'
 import CropPreview from './CropPreview'
+import CropModal from './CropModal'
+import PersonalInfoSavedModal from './PersonalInfoSavedModal'
+import DetailsSavedModal from './DetailsSavedModal'
+import DocumentsUploadedModal from './DocumentsUploadedModal'
+import NotificationPreferencesSavedModal from './NotificationPreferencesSavedModal'
 
 const Main = () => {
     return (
@@ -31,6 +36,11 @@ const Main = () => {
             <Route path='/features' element={<Features />} />
             <Route path='/product' element={<Product />} />
             <Route path='/market-place/crop-preview' element={<CropPreview />} />
+            <Route path='/market-place/crop-modal' element={<CropModal />} />
+            <Route path='/product/personal-info-saved' element={<PersonalInfoSavedModal />} />
+            <Route path='/product/documents-uploaded' element={<DocumentsUploadedModal />} />
+            <Route path='/product/notification-preferences-saved' element={<NotificationPreferencesSavedModal />} />
+            <Route path='/market-place/details-saved' element={<DetailsSavedModal />} />
         </Routes>
     );
 }
