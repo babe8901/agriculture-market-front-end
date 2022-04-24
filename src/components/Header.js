@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const navigation = [
     { name: 'Product', href: '/product' },
     { name: 'Features', href: 'features' },
-    { name: 'Marketplace', href: 'marketplace' },
+    { name: 'Marketplace', href: 'market-place' },
     { name: 'Company', href: 'company' },
 ]
 

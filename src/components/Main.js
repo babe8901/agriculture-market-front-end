@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Home from './Home';
-import Login from './Login';
+import Home from './Home'
+import Login from './Login'
 import DeactivateModal from './DeactivateModal'
 import LoginSuccessModal from './LoginSuccessModal'
 import ApplyLoan from './ApplyLoan'
@@ -11,6 +11,9 @@ import Register from './Register'
 import RegisterSuccessModal from './RegisterSuccessModal'
 import MarketPlace from './MarketPlace'
 import Company from './Company'
+import Features from './Features'
+import Product from './Product'
+import CropPreview from './CropPreview'
 
 const Main = () => {
     return (
@@ -25,7 +28,9 @@ const Main = () => {
             <Route path='/register-success' element={<RegisterSuccessModal />} />
             <Route path='/company' element={<Company />} />
             <Route path='/market-place' element={<MarketPlace />} />
-
+            <Route path='/features' element={<Features />} />
+            <Route path='/product' element={<Product />} />
+            <Route path='/market-place/crop-preview' element={<CropPreview />} />
         </Routes>
     );
 }
